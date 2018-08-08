@@ -1,0 +1,83 @@
+.team {
+	background: url(../img/team_bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	&-acco__item {
+		margin-bottom: 40px;
+	}
+	&-acco__trigger {
+		position: relative;
+		font: {
+			family: 'Gagalin';
+			size: .875rem;
+		}
+		color: #fff;
+		display: block;
+		padding-left: 18px;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 8px;
+			transform: rotate(0deg);
+			transition: .3s;
+			border: 5px solid transparent;	border-top: 5px solid #f9b43b;
+		}
+	}
+	.section__title_yellow {
+		margin-bottom: 80px;
+	}
+}
+.team__container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 50%;
+	background: rgba(47, 50, 52, 0.93);
+	padding: 105px 105px 0 80px;
+}
+.team-acco__item.active .team-acco__trigger {
+	color: #f9b43b;
+}
+.team-acco__item.active .team-acco__trigger:after {
+	transform: rotate(180deg);
+	top: 4px;
+}
+.team-acco__content {
+	@extend %clearfix;
+	margin: 0 0 0 18px;
+	display: none;
+	padding-top: 15px;
+}
+
+.team-acco__pic {
+	float: left;
+	width: 25%
+}
+.team-acco__img {
+	background: url(../img/avatar.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	max-width: 100px;
+	height: 100px;
+
+}
+.team-acco__text {
+	float: left;
+	width: 75%;
+	color: #fff;
+	font-size: .875rem;
+}
+.team-acco__title {
+	font: {
+		weight: 700;
+	}
+	margin-bottom: 10px;
+}
+.team-acco__text-content {
+	font: {
+		weight: 300;
+	}
+	line-height: 24px;
+}

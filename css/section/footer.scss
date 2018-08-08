@@ -1,0 +1,61 @@
+.footer {
+	background: url(../img/footer_bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	padding: 10px 0;
+	.container {
+		@extend %clearfix;
+	}
+	&__left {
+		float: left;
+	}
+	&__right {
+		float: right;
+		padding-top: 8px;
+	}
+	&__address {
+		font: {
+			weight: 300;
+			size: .875rem;
+		}
+		color: #fff;
+		margin-bottom: 6px;
+	}
+	&__tel-link {
+		position: relative;
+		padding-left: 20px;
+		position: relative;
+	}
+	&__tel-number{
+		font: {
+			weight: 600;
+			size: .875rem;
+		}
+		color: $red-color;
+	}
+	&__tel-icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+.social-networks {
+	&__list {
+		@extend %clearfix;
+	}
+	&__item {
+		float: left;
+		margin-left: 20px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:hover .social-network__link svg {
+			opacity: 1;
+		}
+	}
+}
+.social-network__link svg {
+	width: 23px;
+	height: 21px;
+	opacity: .3;
+	transition: .3s;
+}

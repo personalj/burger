@@ -1,0 +1,134 @@
+.hero {
+	background: url(../img/hero_bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.header {
+		@extend %clearfix;
+		padding-top: 12px;
+	&__logo {
+		float: left;
+		width: 34%;
+	}
+	&__nav {
+		@extend %clearfix;
+		float: right;
+		width: 66%;
+		padding-top: 13px;
+	}
+}
+.logo__link {
+	display: block;
+}
+.nav {
+	float: left;
+	padding-top: 10px;
+		&__list {
+			@extend %clearfix;
+		}
+		&__item {
+			float: left;
+			text-transform: uppercase;
+			margin-right: 15px;
+			position: relative;
+			font: {
+				size: .8125rem;
+				weight: 500;
+			}
+			&:after {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				width: 3px;
+				height: 3px;
+				background: #fff;
+				border-radius: 50%;
+				margin-left: 15px;
+			}
+
+		}
+		&__link {
+			color: #fff;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+.nav__item:last-child:after {
+	display: none;
+}
+.btn {
+	display: inline-block;
+	padding: 10px 15px;
+	background: $red-color;
+	border-radius: 5px;
+	text-transform: uppercase;
+	color: #fff;
+	font: {
+		size: .8125rem;
+		weight: 500;
+	}
+}
+.order-link {
+	float: left;
+}
+.hero__container {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	.container {
+		@extend %clearfix;
+	}
+}
+.hero__left {
+	width: 50%;
+	float: left;
+}
+.hero__right {
+	padding-top: 67px;
+	width: 50%;
+	float: left;
+}
+.section__title{
+	 font: {
+	 	family: 'Gagalin';
+	 	size: 4.5rem;
+	 }
+	 margin-bottom: 18px;
+	 &_yellow {
+	 	color: #f9b43b;
+	 }
+}
+.hero__descr {
+	 font: {
+	 	family: 'Lifehack';
+	 	size: 4.06rem;
+	 }
+	 color: #fff;
+}
+.arrow-down {
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	transform: translateX(-50%);
+	width: 60px;
+	height: 60px;
+	transition: .3s;
+	cursor: pointer;
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 30px;
+		height: 30px;
+		margin: -15px 0 0 -15px;
+		transition: .3s;
+		&:hover {
+			margin-top: -25px;
+			width: 35px;
+			height: 35px;
+		}
+	}
+}

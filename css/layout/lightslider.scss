@@ -1,0 +1,22 @@
+.lSPager.lSpg {
+	display: none;
+}
+.lSSlideOuter {
+	overflow: visible;
+}
+.lSSlideWrapper, .lSSlideWrapper .lSFade {
+	position: static;
+}
+.lSAction>a {
+	opacity: 1;
+}
+.lSAction>.lSNext {
+	background: url(../img/icons/arrow-scroll.svg) 50% 50% no-repeat;
+	transform: rotate(270deg);
+	right: -40px;
+}
+.lSAction>.lSPrev {
+	background: url(../img/icons/arrow-scroll.svg) 50% 50% no-repeat;
+	transform: rotate(90deg);
+	left: -40px;
+}

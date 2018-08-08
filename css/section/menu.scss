@@ -1,0 +1,79 @@
+.menu {
+	background: url(../img/menu_bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	&-acco__list {
+		height: 100%;
+		@extend %clearfix;
+	}
+	&-acco__item {
+		height: 100%;
+		float: left;
+		@extend %clearfix;
+	}
+	&-acco__container {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+	}
+	&-acco__trigger {
+		display: block;
+		width: 80px;
+		height: 100%;
+		position: relative;
+		float: left;
+		&-text {
+			font: {
+				family: 'Gagalin';
+				size: 2.5rem;
+			}
+			color: #fff;
+			height: 80px;
+			width: 650px;
+			position: absolute;
+			left: -271px;
+			top: 50%;
+			margin-top: -200px;
+			transform: rotate(-90deg);
+			white-space: nowrap;
+		}
+	}
+	&-acco__meat {
+		background: url(../img/meat_bg.jpg) 50% 50% no-repeat;
+		background-size: cover;
+	}
+	&-acco__vegeterian {
+		background: url(../img/vegeterian_bg.jpg) 50% 50% no-repeat;
+		background-size: cover;
+	}
+	&-acco__diet {
+		background: url(../img/diet_bg.jpg) 50% 50% no-repeat;
+		background-size: cover;
+	}
+	&-acco__content {
+		height: 100%;
+		width: 0;
+		background: rgba(47, 50, 52, 0.93);
+		overflow: hidden;
+		float: left;
+	}
+	&-acco__text {
+		padding: 60px 30px;
+		font: {
+			weight: 300;
+			size: .875rem
+		}
+		line-height: 24px;
+		color: #fff;
+		width: 550px;
+	}
+}
+.menu .section__title {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+.menu-acco__item.active .menu-acco__trigger-text {
+	color: #f9b43b;
+}
